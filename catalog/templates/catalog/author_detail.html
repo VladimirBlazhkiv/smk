@@ -1,0 +1,20 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+{% load imagekit %}
+
+  <h1>Автор (владелец) подробно:</h1>
+  <p><strong>Фото автора:</strong><img src="{{ author.photo_author.url }}"/></p>
+  <p><strong>ФИО:</strong> {{ author.first_name }} {{ author.last_name }} {{ author.otch_name }}</p> 
+  <p><strong>Дата рождения:</strong> {{ author.date_of_birth }}</p> 
+  <p><strong>Город:</strong> {{ author.gorod }}</p>
+  <p><strong>Спортивный разряд:</strong> {{ author.sport_razyad }}</p>
+  <p><strong>Судейская категория:</strong> {{ author.sudeyskaja_kategorija }}</p>
+  <p><strong>Федеральный номер спортсмена:</strong> {{ author.fn_sportsmena }}</p>
+  <p><strong>Интересы:</strong>{{author.author_hobby}}</p>
+  <p><strong>Сайт или профиль:</strong>{{author.author_site}}</p>
+  <p><strong></strong>{{author.}}</p>
+   
+
+{% endblock %}
+l

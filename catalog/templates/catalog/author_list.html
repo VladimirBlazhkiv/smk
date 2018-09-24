@@ -1,0 +1,21 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Список авторов (владельцев)</h1>
+
+    {% if object_list %}
+    <ul>
+
+      {% for author in author_list %}
+      <li>
+        <a href="{% url 'Author-detail' author.pk %}">{{ author.first_name }} {{author.last_name}}  {{author.otch_name}} </a> | спорт.разряд: {{author.sport_razyad}}
+        
+    
+      </li>
+      {% endfor %}
+
+    </ul>
+    {% else %}
+      <p>Больше нет записей в базе.</p>
+    {% endif %}       
+{% endblock %}

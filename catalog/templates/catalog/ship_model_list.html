@@ -1,0 +1,19 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Список моделей</h1>
+
+    {% if object_list %}
+    <ul>
+
+      {% for ship_model in ship_model_list %}
+      <li>
+        <a href="{% url 'Ship_model-detail' ship_model.pk %}">{{ ship_model.ship_name }}</a> {{ship_model.author}} / {{ship_model.ship_class_naviga}} 
+      </li>
+      {% endfor %}
+
+    </ul>
+    {% else %}
+      <p>Больше нет записей в базе.</p>
+    {% endif %}       
+{% endblock %}

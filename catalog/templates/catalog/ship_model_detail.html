@@ -1,0 +1,26 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+
+  <h1>Модель: {{ ship_model.ship_name }}</h1>
+  <p><strong>Федеральный номер: {{ fn_sportsmena.ship_name }}</p>
+  <p><strong>Автор или владелец:</strong> <a href="{% url 'Author-detail' ship_model.author.pk %}">{{ ship_model.author }}</a></p> 
+  <p><strong>Название модели:</strong> {{ ship_model.ship_name }}</p>
+  <p><strong>Фото модели:</strong><img src="{{ ship_model.photo_modelship.url }}"/></p>
+  <p><strong>Информация о пртотипе:</strong> {{ ship_model.ship_prototype }}</p>
+  <p><strong>Фото прототипа:</strong><img src="{{ ship_model.photo_prototype.url }}"/></p>
+  <p><strong>Масштаб модели 1:</strong> {{ ship_model.ship_scale }}</p>
+  <p><strong>Сведения о прототипе:</strong> {{ ship_model.ship_prototype }}</p> 
+  <p><strong>Класс по NAVIGA:</strong> {{ ship_model.ship_class_naviga }}</p>
+  <p><strong>Инновации:</strong> {{ ship_model.ship_tehnology }}</p> 
+  <p><strong>Заложена:</strong> {{ ship_model.date_start }}</p>
+  <!--<p><strong>Построена:</strong> {{ ship_model.date_end }}</p>-->
+  <p><strong>Баллы за ход:</strong> {{ ship_model.ship_run }}</p>
+  <p><strong>Максимальная авторская стендовая оценка (максимум 100):</strong> {{ ship_model.ship_stend }}</p>
+  <p><strong>Максимальная судейская стендовая оценка (максимум 100):</strong> {{ ship_stend_refery }}</p>
+  <p><strong>Статус:</strong> {{ ship_model.ship_status }}</p>
+  
+
+{% endblock %}
+

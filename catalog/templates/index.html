@@ -1,0 +1,17 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Судомодельный спорт</h1>
+
+  <p>Автоматизированная система учета судомоделей копий секции NS - АСУ NAVIGA</p>
+
+<h2>Содержимое</h2>
+
+  <p>База содержит записи о:</p>
+  <ul>
+    <li><strong>Учтено моделей в базе:</strong> {{ num_ship_model }}</li>
+    <li><strong>Зарегистировано авторов:</strong> {{ num_authors }}</li>
+  </ul>
+  
+<p>Вы просматривали эту страницу {{ num_visits }}{% if num_visits == 1 %} time{% else %} раз{% endif %}.</p>
+{% endblock %}

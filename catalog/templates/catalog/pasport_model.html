@@ -1,0 +1,136 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<meta charset="utf-8">
+    <style>
+p   {font-family:  'Times New Roman', Times, serif; 
+    font-size: 11pt; /* Размер шрифта в пунктах */ }
+h1 {font-family:  Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 24pt; /* Размер шрифта в пунктах */ }
+    table 
+    { 
+    border: 1px double black; /* Рамка вокруг таблицы */
+    border-collapse: collapse; /* Отображать только одинарные линии */
+    }
+    td {
+        text-align: left; /* Выравнивание по левому краю */
+        
+        padding: 5px; /* Поля вокруг содержимого ячеек */
+        border: 1px solid black; /* Граница вокруг ячеек */
+        }
+    
+     </style>
+<table width= 1280>
+    <tr>
+        <td>
+       .................................. SAIL TABLE......................................
+        </td>
+        <td>
+        <b><h1>NAVIGA</h1></b>
+        <h1><ins>Model Certificate</ins></h1>
+        <b><p>For models in <i>NSS</i> categories</b></p><br><br>
+        <b>OWNER:</b><br>
+        <p>
+        Name: {{ author.first_name }}<br>
+        First Name:{{ author.first_name }} {{ author.last_name }} {{ author.otch_name }}<br>
+        Address:<br>
+        Street and House-No:<br>
+        Date of birth:{{ author.date_of_birth }}</p><br>
+        
+        
+        <br>
+        <center>
+        <table width = 600>
+        <center><b><p>CONFIRMATION OF THE DATA ENTERED</b></p></center>
+            <tr>
+                <td>
+                <br>........................................<br>
+                <p>Signature of the Model Owner</p>
+                </td>
+                <td>
+                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <br>........................................<br>
+                <p>Signature of the Club Chariman</p>
+                </td>
+                <td>
+                <center>
+                <p>Signature of the Technical Representative<br>
+                for measuring the Model</p>
+                </center>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>Date</p>
+                </td>
+                <td>
+                .............................................
+                </td>
+            </tr>
+        </table>
+        </center>
+        <center>
+        <br>
+        <table>
+        
+        <b>World Organisation for Model Shipbuilding and Model Shipsport</b>
+        <br>
+        <p>Medals achieved whith this Model<br>
+        at World/Europpean Championship / World Competitions</p>
+            <tr>
+                <td>
+                Championship / Competitions<br>
+                (Country, Place, Date)
+                </td>
+                <td>
+                  Medal  
+                </td>
+                <td>
+                CONFIRMATION by the Maim Rereree
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <br><br>
+                </td>
+                <td>
+                
+                </td>
+                <td>
+                
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                <br><br>
+                </td>
+                <td>
+                
+                </td>
+                <td>
+                
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                <br><br>
+                </td>
+                <td>
+                
+                </td>
+                <td>
+                
+                </td>
+            </tr>
+        </table>
+        </center>
+        </td>
+    </tr>
+    
+    
+</table>
